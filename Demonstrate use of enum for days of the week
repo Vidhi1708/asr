@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+// Define enum for days of the week
+enum DaysOfWeek {
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday
+};
+
+int main() {
+    DaysOfWeek today;
+
+    // Assign a day
+    today = Wednesday;
+
+    cout << "The numeric value of today is: " << today << endl;
+
+    // Print day name using switch
+    switch (today) {
+        case Sunday:    cout << "Today is Sunday"; break;
+        case Monday:    cout << "Today is Monday"; break;
+        case Tuesday:   cout << "Today is Tuesday"; break;
+        case Wednesday: cout << "Today is Wednesday"; break;
+        case Thursday:  cout << "Today is Thursday"; break;
+        case Friday:    cout << "Today is Friday"; break;
+        case Saturday:  cout << "Today is Saturday"; break;
+        default:        cout << "Invalid day"; break;
+    }
+
+    return 0;
+}
