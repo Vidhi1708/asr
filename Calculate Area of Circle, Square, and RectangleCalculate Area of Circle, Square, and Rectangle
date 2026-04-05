@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float radius, side, length, width;
+
+    // Circle
+    cout << "Enter radius of circle: ";
+    cin >> radius;
+    float areaCircle = 3.14 * radius * radius;
+
+    // Square
+    cout << "Enter side of square: ";
+    cin >> side;
+    float areaSquare = side * side;
+
+    // Rectangle
+    cout << "Enter length and width of rectangle: ";
+    cin >> length >> width;
+    float areaRectangle = length * width;
+
+    // Output results
+    cout << "\nAreas are:" << endl;
+    cout << "Circle = " << areaCircle << endl;
+    cout << "Square = " << areaSquare << endl;
+    cout << "Rectangle = " << areaRectangle << endl;
+
+    return 0;
+}
